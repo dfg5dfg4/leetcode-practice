@@ -64,7 +64,8 @@ make
 ```bash
 # 创建并激活虚拟环境
 cd python
-python -m venv venv
+python3 -m venv venv  # 在Linux系统上使用python3
+# 或 python -m venv venv  # 在Windows或已配置python命令的系统上
 source venv/bin/activate  # Linux/Mac
 # 或 venv\Scripts\activate  # Windows
 
