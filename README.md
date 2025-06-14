@@ -120,3 +120,27 @@ pytest src/test_two_sum.py
 - [LeetCode 中文站](https://leetcode.cn/)
 - [算法可视化](https://visualgo.net/)
 - [Big-O 复杂度速查表](https://www.bigocheatsheet.com/)
+
+
+# 运行特定的可执行文件
+
+如果你遇到CMake缓存错误，可以按照以下步骤重新配置：
+
+```bash
+# 删除旧的构建目录
+cd cpp
+rm -rf build
+
+# 创建新的构建目录并配置
+mkdir -p build && cd build
+cmake ..
+
+# 编译
+make
+
+# 运行特定的可执行文件
+./pointer_test  # 运行指针测试程序
+./two_sum       # 运行两数之和程序
+```
+
+编译后的可执行文件将位于`build`目录中，可以直接运行。
